@@ -1,0 +1,35 @@
+{
+	"name": "jest-md-reporter",
+	"version": "1.0.0",
+	"description": "",
+	"keywords": [],
+	"license": "ISC",
+	"author": "",
+	"main": "src/mdReporter.js",
+	"scripts": {
+		"test": "jest"
+	},
+	"jest": {
+		"reporters": [
+			"default",
+			[
+				"./src/mdReporter",
+				{
+					"filename": "test-report.md",
+					"publicPath": "./test-reports"
+				}
+			]
+		],
+		"testMatch": [
+			"**/__tests__/*.test.js"
+		]
+	},
+	"dependencies": {
+		"ejs": "^3.1.7"
+	},
+	"devDependencies": {
+		"jest": "^28.0.3",
+		"jest-when": "^3.5.1",
+		"prettier": "^2.6.2"
+	}
+}
