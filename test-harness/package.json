@@ -13,7 +13,7 @@
 		"reporters": [
 			"default",
 			[
-				"jest-gh-md-reporter",
+				"@thesheps/jest-md-reporter",
 				{
 					"filename": "test-report.md",
 					"publicPath": "./test-reports"
@@ -25,6 +25,6 @@
 		"jest": "^28.1.0"
 	},
 	"devDependencies": {
-		"jest-gh-md-reporter": "file:../jest-gh-md-reporter-1.0.0.tgz"
+		"@thesheps/jest-md-reporter": "file:../@thesheps/jest-md-reporter-1.0.0.tgz"
 	}
 }

@@ -1,0 +1,9 @@
+/.github
+**/__tests__
+/test-harness
+/coverage
+/test-reports
+/package
+test-report.png
+stryker.conf.json
+README.md

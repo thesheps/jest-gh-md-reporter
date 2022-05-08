@@ -13,5 +13,7 @@ jobs:
           npm run test:unit
 
       - name: Publish to NPM 🚀
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           npm publish
