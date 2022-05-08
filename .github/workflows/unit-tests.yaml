@@ -1,4 +1,4 @@
-name: Unit Tests
+name: Test & Publish
 on: [push]
 jobs:
   test:
@@ -11,3 +11,7 @@ jobs:
         run: |
           npm ci
           npm run test:unit
+
+      - name: Publish to NPM 🚀
+        run: |
+          npm publish
