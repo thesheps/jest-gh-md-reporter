@@ -1,13 +1,14 @@
 {
 	"name": "jest-md-reporter",
 	"version": "1.0.0",
-	"description": "",
+	"description": "A markdown reporter for Jest!",
 	"keywords": [],
-	"license": "ISC",
-	"author": "",
+	"license": "MIT",
+	"author": "Chris Shepherd",
 	"main": "src/mdReporter.js",
 	"scripts": {
-		"test": "jest"
+		"test:mutation": "stryker run",
+		"test:unit": "rm -rf .stryker-tmp && jest --coverage"
 	},
 	"jest": {
 		"reporters": [
@@ -28,6 +29,8 @@
 		"ejs": "^3.1.7"
 	},
 	"devDependencies": {
+		"@stryker-mutator/core": "^6.0.2",
+		"@stryker-mutator/jest-runner": "^6.0.2",
 		"jest": "^28.0.3",
 		"jest-when": "^3.5.1",
 		"prettier": "^2.6.2"
