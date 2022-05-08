@@ -14,4 +14,4 @@ jobs:
           npm ci
           npm run test:unit
           npm version patch
-          git push origin --tags
+          git push origin "https://$GITHUB_TOKEN@github.com/thesheps/jest-md-reporter.git" --tags
