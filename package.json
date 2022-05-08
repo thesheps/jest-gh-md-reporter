@@ -1,6 +1,6 @@
 {
 	"name": "@thesheps/jest-md-reporter",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "A markdown reporter for Jest!",
 	"keywords": [],
 	"license": "MIT",
