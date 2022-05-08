@@ -11,6 +11,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.JEST_MD_REPORTER_PAT }}
         run: |
+          git config user.name ${{ secrets.GH_USER }}
+          git config user.email "${{ secrets.GH_EMAIL }}"
           npm ci
           npm run test:unit
           npm version patch
