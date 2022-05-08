@@ -31,3 +31,7 @@ And theeeeeeen:
 This'll give you some lovely test output that looks like:
 
 ![This!](./test-report.png)
+
+## Contribution
+
+This was put together over a very hungover Saturday. Totally down for contribution, hit me up!
