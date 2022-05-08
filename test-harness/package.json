@@ -1,0 +1,30 @@
+{
+	"name": "test-harness",
+	"version": "1.0.0",
+	"description": "",
+	"keywords": [],
+	"license": "ISC",
+	"author": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest"
+	},
+	"jest": {
+		"reporters": [
+			"default",
+			[
+				"jest-md-reporter",
+				{
+					"filename": "test-report.md",
+					"publicPath": "./test-reports"
+				}
+			]
+		]
+	},
+	"dependencies": {
+		"jest": "^28.1.0"
+	},
+	"devDependencies": {
+		"jest-md-reporter": "file:../jest-md-reporter-1.0.0.tgz"
+	}
+}
