@@ -6,12 +6,11 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
-        run: |
-          git config user.name ${{ secrets.GH_USER }}
-          git config user.email "${{ secrets.GH_EMAIL }}"
 
       - name: Install and Test 🧪
         run: |
+          git config user.name ${{ secrets.GH_USER }}
+          git config user.email "${{ secrets.GH_EMAIL }}"
           npm ci
           npm run test:unit
           npm version patch
