@@ -1,4 +1,4 @@
-# jest-md-reporter
+# jest-gh-md-reporter
 
 This daft little package hooks into your node project and outputs your test results to a markdown file.
 
@@ -7,7 +7,7 @@ This daft little package hooks into your node project and outputs your test resu
 To install this reporter and get going, it should be as simple as:
 
 ```bash
-npm i jest-md-reporter
+npm i jest-gh-md-reporter
 ```
 
 And theeeeeeen:
@@ -18,7 +18,7 @@ And theeeeeeen:
 		"reporters": [
 			"default",
 			[
-				"jest-md-reporter",
+				"jest-gh-md-reporter",
 				{
 					"filename": "test-report.md",
 					"publicPath": "./test-reports"
