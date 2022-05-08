@@ -20,5 +20,4 @@ jobs:
         run: |
           npm version patch
           git push origin --tags
-          git merge main
           npm publish
