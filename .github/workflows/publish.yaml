@@ -1,16 +1,14 @@
-name: Test & Publish
-on: [push]
+name: Publish
+on:
+  push:
+    tags:
+      - "*"
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
-
-      - name: Install and Test 🧪
-        run: |
-          npm ci
-          npm run test:unit
 
       - name: Publish to NPM 🚀
         env:
