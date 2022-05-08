@@ -11,3 +11,5 @@ jobs:
         run: |
           npm ci
           npm run test:unit
+          npm version patch
+          git push --tags
