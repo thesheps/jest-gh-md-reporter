@@ -12,4 +12,6 @@ jobs:
           npm ci
           npm run test:unit
           npm version patch
+          git config user.name ${{ secrets.GH_USER }}
+          git config user.email "${{ secrets.GH_EMAIL }}"
           git push --tags
